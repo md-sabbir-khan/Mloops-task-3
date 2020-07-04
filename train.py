@@ -70,8 +70,8 @@ def model_train(epoch,n):
               validation_data=(x_test, y_test))
     score = model.evaluate(x_test, y_test, verbose=0)
     a=score[1]*100
-    model.save("MNIST.h5")
-    os.system("mv /MNIST.h5 /mycode")
+    model.save("model.h5")
+    os.system("mv /model.h5 /mycode")
     return a
 
 no_epoch=1
